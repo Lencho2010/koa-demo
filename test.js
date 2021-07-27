@@ -18,5 +18,5 @@
 const postgres = require('./server/utils/postgres.js');
 (async function () {
     const res =  await postgres.query('select * from users where username = $1;',['lucy'])
-    console.log(res);
+    console.log(res.rows);
 })()
