@@ -15,8 +15,8 @@
 //     console.log('The solution is: ', results[0].solution);
 // });
 
-const postgres = require('./server/utils/postgres.js');
+const pgDb = require('../server/utils/postgres.js');
 (async function () {
-    const res =  await postgres.query('select * from users where username = $1;',['lucy'])
+    const res =  await pgDb.query('select * from users where username = $1;',['lucy'])
     console.log(res.rows);
 })()

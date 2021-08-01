@@ -1,14 +1,6 @@
 /**postgres.js*/
 const Pool = require('pg-pool');
-
-const config = {
-    user: 'postgres',
-    password: 'root',
-    host: 'hadoop104',
-    port: 5432,
-    database: 'db01',
-    // ssl: true
-};
+const config = require('../config/pg_db.js')
 
 const pool = new Pool(config);
 
