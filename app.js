@@ -1,4 +1,5 @@
 const Koa = require('koa')
+const cors = require('koa2-cors')
 const app = new Koa()
 const views = require('koa-views')
 const json = require('koa-json')
@@ -12,6 +13,13 @@ const testRouter = require('./routes/test')
 
 // error handler
 onerror(app)
+// 设置跨域
+app.use(cors({
+  origin: function (ctx) {
+    // 这里用 headers 和 header 属性皆可
+    return ctx.header.origin;
+  }
+}))
 
 // middlewares
 app.use(bodyparser({
