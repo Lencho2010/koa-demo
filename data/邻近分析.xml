@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <chart name="土地利用结构" layer-filter="Q_dlbm_S_IN={childname}" layer-filter-dic-allchild="true"
+           layer-filter-dickey="DIC_GZFL_3D" title="土地利用结构" dataref="土地利用构成" field-x="地类" field-y="面积,占比"
+           unitoptions="[平方米;亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="三调土地利用现状分类" colorfield="地类" tipmessage="无相关数据" xh="1"
+           isRefresh="_filter">
+        <datatable name="土地利用构成" unit="平方米,%" db="3" dbkey="MainGeoDatabase">
+            with a as ( select a.tbmj::numeric as 面积 , a.dlbm , a.dlmc from GLCX_SDDLTB_TDLY a where a.f_analysisid =
+            '{analysisId}' ), b as (select sum(面积) as 总面积 from a)
+
+            select sum(a.面积 ) as 面积,round(sum(a.面积) / max(总面积)*100,2) as 占比 ,a.dlmc as 地类 from a ,b group by a.dlmc
+        </datatable>
+    </chart>
+
+    <chart name="土地利用权属性质结构" layer-filter="Q_qsxz_S_IN={childname}" layer-filter-dickey="DIC_QSXZ_FILITER"
+           title="土地利用权属性质结构" dataref="土地利用权属性质结构" field-x="权属" field-y="面积" unitoptions="[平方米;亩;公顷;平方千米;万亩;万公顷]"
+           colorcategory="权属" tipmessage="无相关数据" colorfield="权属" xh="3" isRefresh="_filter">
+        <datatable name="土地利用权属性质结构" unit="平方米" db="3" dbkey="MainGeoDatabase">
+            with a as ( select * from GLCX_SDDLTB_TDLY where f_analysisid = '{analysisId}' )
+            select '国有' as 权属,sum(tbmj::numeric) as 面积 from a where qsxz in ('10' , '20')
+            union all select '集体' as 权属,sum(tbmj::numeric) as 面积 from a where qsxz not in ('10' , '20')
+        </datatable>
+    </chart>
+
+    <chart name="城镇村及工矿用地面积" title="城镇村及工矿用地面积" layer-filter="Q_czcsxm_S_IN={childname}"
+           layer-filter-dickey="DIC_CZCJGKYD_3D" dataref="城镇村及工矿用地面积" field-x="类型" field-y="面积"
+           unitoptions="[平方米;亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调城镇村属性分类" tipmessage="无相关数据" colorfield="类型" xh="2"
+           isRefresh="_filter">
+        <datatable name="城镇村及工矿用地面积" unit="平方米" db="3" dbkey="MainGeoDatabase">
+            with a as ( select * from GLCX_SDDLTB_TDLY where f_analysisid = '{analysisId}' )
+            select '城市' as 类型, COALESCE( sum(tbmj::numeric ),0) as 面积 from a where czcsxm = '201'
+            union all select '建制镇' as 类型, COALESCE( sum(tbmj::numeric ),0) as 面积 from a where czcsxm = '202'
+            union all select '村庄' as 类型, COALESCE( sum(tbmj::numeric ),0) as 面积 from a where czcsxm = '203'
+            union all select '盐田及采矿用地' as 类型, COALESCE( sum(tbmj::numeric ),0) as 面积 from a where czcsxm = '204'
+            union all select '特殊用地' as 类型, COALESCE( sum(tbmj::numeric ),0) as 面积 from a where czcsxm = '205'
+        </datatable>
+    </chart>
+
+    <chart name="耕地种植属性" layer-filter="Q_zzsxdm_S_IN={childname}" layer-filter-dickey="DIC_GDZZSX" title="耕地种植类型面积占比"
+           dataref="耕地种植属性" field-x="类型" field-y="面积" unitoptions="[平方米;亩;公顷;平方千米;万亩;万公顷]" colorcategory="三调种植属性分类"
+           tipmessage="无相关数据" colorfield="类型" xh="5" isRefresh="_filter">
+        <datatable name="耕地种植属性" unit="平方米" db="3" dbkey="MainGeoDatabase">
+            with a as ( select * from GLCX_SDDLTB_TDLY where f_analysisid = '{analysisId}' )
+            select '种植粮食作物' as 类型, COALESCE( sum(tbmj::numeric ),0) as 面积 from a where zzsxdm ='LS'
+            union all select '粮与非粮轮作' as 类型, COALESCE( sum(tbmj::numeric ),0) as 面积 from a where zzsxdm ='LYFL'
+            union all select '种植非粮食作物' as 类型,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where zzsxdm ='FLS'
+            union all select '林粮间作' as 类型,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where zzsxdm ='LLJZ'
+            union all select '休耕' as 类型,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where zzsxdm ='XG'
+            union all select '未耕种' as 类型,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where zzsxdm ='WG'
+        </datatable>
+    </chart>
+
+    <chart name="耕地细化" layer-filter="Q_tbxhdm_S_IN={childname}" layer-filter-dickey="DIC_TBXHLX" title="耕地细化调查情况"
+           dataref="耕地细化" field-x="细化地类" field-y="面积,占比" unitoptions="[平方米;亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="三调耕地细化"
+           tipmessage="无相关数据" colorfield="细化地类" xh="6" isRefresh="_filter">
+        <datatable name="耕地细化" unit="平方米,%" db="3" dbkey="MainGeoDatabase">
+            with a as ( select * from GLCX_SDDLTB_TDLY where f_analysisid = '{analysisId}' )
+            select '河道耕地' as 细化地类,sum(tbmj::numeric) as 面积 from a where tbxhmc = '河道耕地'
+            union all select '湖区耕地' as 细化地类,sum(tbmj::numeric) as 面积 from a where tbxhmc = '湖区耕地'
+            union all select '林区耕地' as 细化地类,sum(tbmj::numeric) as 面积 from a where tbxhmc = '林区耕地'
+            union all select '牧区耕地' as 细化地类,sum(tbmj::numeric) as 面积 from a where tbxhmc = '牧区耕地'
+            union all select '沙荒耕地' as 细化地类,sum(tbmj::numeric) as 面积 from a where tbxhmc = '沙荒耕地'
+            union all select '石漠化耕地' as 细化地类,sum(tbmj::numeric) as 面积 from a where tbxhmc = '石漠化耕地'
+            union all select '盐碱耕地' as 细化地类,sum(tbmj::numeric) as 面积 from a where tbxhmc = '盐碱耕地'
+        </datatable>
+    </chart>
+
+    <chart name="恢复属性" layer-filter="Q_zzsxdm_S_IN={childname}" layer-filter-dickey="DIC_GDZZSX" title="即可恢复与工程恢复面积"
+           dataref="恢复属性" field-x="地类" field-y="面积,占比" unitoptions="[平方米;亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="三调恢复属性"
+           tipmessage="无相关数据" colorfield="地类" xh="4" isRefresh="_filter">
+        <datatable name="恢复属性" unit="平方米,%" db="3" dbkey="MainGeoDatabase">
+            with a as ( select * from GLCX_SDDLTB_TDLY where f_analysisid = '{analysisId}' )
+            select '即可恢复' as 地类,sum(tbmj::numeric) as 面积 from a where zzsxdm = 'JKHF'
+            union all select '工程恢复' as 地类,sum(tbmj::numeric) as 面积 from a where zzsxdm = 'GCHF'
+        </datatable>
+    </chart>
+
+    <chart name="坡耕地与梯田耕地利用现状" layer-filter="{childname}" layer-filter-dickey="DIC_GDLX_FILITER" title="坡耕地与梯田耕地利用现状"
+           dataref="坡耕地与梯田耕地利用现状" field-x="耕地类型" field-y="面积" unitoptions="[平方米;亩;公顷;平方千米;万亩;万公顷] " tipmessage="无相关数据"
+           colors="rgb(220,233,156);rgb(160,218,67);rgb(49,181,115)"
+           tabletranspose="{xzqh}耕地类型分类面积汇总统计表" xh="7" isRefresh="_filter">
+        <datatable name="坡耕地与梯田耕地利用现状" unit="平方米,平方米,平方米" db="3" dbkey="MainGeoDatabase">
+            with a as ( select * from GLCX_SDDLTB_TDLY where f_analysisid = '{analysisId}' )
+            select '平地' as 耕地类型, sum(tbmj::numeric ) as 面积 from a where gdpdjb = '1' and dlbm in ('0101','0102','0103')
+            union all select '坡地' as 耕地类型,sum(tbmj::numeric ) as 面积 from a where gdpdjb &lt;&gt; '1' and gdlx= 'PD' and
+            dlbm
+            in ('0101','0102','0103')
+            union all select '梯田' as 耕地类型,sum(tbmj::numeric ) as 面积 from a where gdpdjb &lt;&gt; '1' and gdlx = 'TT' and
+            dlbm in ('0101','0102','0103')
+        </datatable>
+    </chart>
+
+    <chart name="耕地坡度" layer-filter="Q_gdpdjb_N_EQ={childname}" layer-filter-dickey="DIC_GDPDFJ_FILITER"
+           title="耕地坡度分级面积占比" dataref="耕地坡度" field-x="坡度级" field-y="面积" unitoptions="[平方米;亩;公顷;平方千米;万亩;万公顷]"
+           colorcategory="耕地坡度分类" tipmessage="无相关数据" colorfield="坡度级" defaultunit="万公顷" xh="8" isRefresh="_filter">
+        <datatable name="耕地坡度" unit="平方米" db="3" dbkey="MainGeoDatabase">
+            with a as ( select * from GLCX_SDDLTB_TDLY where f_analysisid = '{analysisId}' )
+            select '≤2°' as 坡度级,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where gdpdjb = '1'
+            union all select '2°~6°' as 坡度级,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where gdpdjb = '2'
+            union all select '6°~15°' as 坡度级,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where gdpdjb = '3'
+            union all select '15°~25°' as 坡度级,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where gdpdjb = '4'
+            union all select '>25°' as 坡度级,COALESCE( sum(tbmj::numeric ),0) as 面积 from a where gdpdjb = '5'
+        </datatable>
+    </chart>
+
+</root>

@@ -1,4 +1,4 @@
-module.exports = {
+const devConfig = {
     user: 'postgres',
     password: 'root',
     host: 'hadoop104',
@@ -6,3 +6,14 @@ module.exports = {
     database: 'db01',
     // ssl: true
 };
+
+const prodConfig = {
+    user: 'postgres',
+    password: '123',
+    host: '192.168.102.200',
+    port: 5432,
+    database: 'gtdckjk',
+    // ssl: true
+};
+
+module.exports = prodConfig;
