@@ -13,7 +13,7 @@ router.get('/', async (ctx) => {
         } = ctx.params
 
         const retData = await getData(key)
-        ctx.body = retData.rows
+        ctx.body = retData
         // ctx.body = `获取key为[${key}]的关联分析数据`;
     });
 

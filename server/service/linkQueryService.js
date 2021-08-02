@@ -13,12 +13,21 @@ const mapObj = {
 	analysisId: "b1a6b424-8965-4f60-be67-49f3d26875f4"
 }
 
-const queryFun = (chartKey) => {
+const queryFun = async (chartKey) => {
 	const chart = chartArr.find(item => item._attributes.name === chartKey);
 	if (!chart) return;
 	const querySql = chart.datatable._text;
-	const parseSql = regReplace(querySql, mapObj)
-	return dbHelper.query(parseSql)
+	const parseSql = regReplace(querySql, mapObj);
+	const tableData = await dbHelper.query(parseSql);
+	const attribute = chart._attributes
+
+	return {
+		key: attribute.name,
+		name: attribute.title,
+		xAxis: attribute['field-x'],
+		yAxis: attribute['field-y'].split(','),
+		data: tableData.rows
+	}
 }
 
 module.exports = queryFun
