@@ -1,0 +1,183 @@
+{
+    "title": "土地利用现状分析",
+    "canFulled": true,
+    "extendjs": "土地利用现状专题,临近分析",
+    "full": {
+        "rowStyle": "1fr 1fr 1fr 1fr",
+        "colStyle": "2fr 3fr 3fr 2fr",
+        "areaStyle": "'a . . b''c . . d''e . . f''l m n o'",
+        "charts": [{
+                "key": "土地利用结构",
+                "type": "pie_3_pro",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 18,
+                "titleClick": true,
+                "canSelect": true,
+                "gridArea": "a",
+                "position": "left",
+                "order": 1,
+                "click": {
+                    "canClick": true,
+                    "chart": {
+                        "type": "column_1_old",
+                        "row": 1,
+                        "rowSpan": 1,
+                        "column": 1,
+                        "columnSpan": 18,
+                        "titleClick": true,
+                        "gridArea": "a",
+                        "legend": {
+                            "show": true
+                        },
+                        "click": {
+                            "canClick": true
+                        }
+                    }
+                },
+                "legend": {
+                    "show": false
+                },
+                "canFulled": false,
+                "canDowned": false
+            },
+            {
+                "key": "城镇村及工矿用地面积",
+                "type": "pie_2_pro",
+                "row": 3,
+                "rowSpan": 1,
+                "column": 55,
+                "columnSpan": 18,
+                "position": "left",
+                "order": 2,
+                "titleClick": true,
+                "click": {
+                    "canClick": true,
+                    "canSelect": true
+                },
+                "gridArea": "c",
+                "legend": {
+                    "show": false
+                },
+                "sumTitle": "城镇村及工矿用地总面积",
+                "canFulled": false,
+                "canDowned": false 
+            },
+            {
+                "key": "土地利用权属性质结构",
+                "type": "pie_2_pro",
+                "row": 2,
+                "rowSpan": 1,
+                "column": 55,
+                "columnSpan": 18,
+                "titleClick": true,
+                "gridArea": "e",
+                "position": "left",
+                "order": 3,
+                "canFulled": false,
+                "canDowned": false,
+                "click": {
+                    "canClick": true,
+                    "canSelect": true
+                }
+            },
+            {
+                "key": "恢复属性",
+                "type": "column_2_old",
+                "row": 2,
+                "rowSpan": 1,
+                "column": 57,
+                "titleClick": true,
+                "columnSpan": 18,
+                "gridArea": "l",
+                "position": "left",
+                "order": 4,
+                "legend": {
+                    "show": false
+                },
+                "canFulled": false,
+                "canDowned": false,
+                "sumTitle": "即可恢复与工程恢复总面积"
+            },
+            {
+                "key": "耕地种植属性",
+                "type": "pie_2_pro",
+                "row": 3,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 18,
+                "titleClick": true,
+                "click": {
+                    "canClick": true,
+                    "canSelect": true
+                },
+                "gridArea": "b",
+                "position": "right",
+                "order": 1,
+                "legend": {
+                    "show": false
+                },
+                "canFulled": false,
+                "canDowned": false
+            },
+            {
+                "key": "耕地细化",
+                "type": "column_2_old",
+                "row": 3,
+                "rowSpan": 1,
+                "column": 31,
+                "columnSpan": 20,
+                "gridArea": "d",
+                "position": "right",
+                "titleClick": true,
+                "order": 2,
+                "legend": {
+                    "show": false
+                },
+                "sumTitle": "细化地类总面积",
+                "sort": "desc",
+                "canFulled": false,
+                "canDowned": false
+            },
+            {
+                "key": "坡耕地与梯田耕地利用现状",
+                "type": "column_1_old",
+                "row": 3,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 18,
+                "titleClick": true,
+                "click": {
+                    "canClick": true,
+                    "canSelect": true
+                },
+                "gridArea": "f",
+                "position": "right",
+                "order": 3,
+                "legend": {
+                    "show": false
+                },
+                "canFulled": false,
+                "canDowned": false
+            },
+            {
+                "key": "耕地坡度",
+                "type": "pie_1_pro",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 18,
+                "columnSpan": 18,
+                "legend": {
+                    "show": false
+                },
+                "canFulled": false,
+                "canDowned": false,
+                "titleClick": true,
+                "gridArea": "o",
+                "position": "right",
+                "order": 4
+            }
+        ]
+    }
+}

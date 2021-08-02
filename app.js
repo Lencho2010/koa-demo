@@ -6,6 +6,7 @@ const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
+const path = require('path')
 
 const index = require('./routes/index')
 const users = require('./routes/users')
@@ -21,6 +22,9 @@ app.use(cors({
     return ctx.header.origin;
   }
 }))
+
+// 静态资源
+app.use(require('koa-static')(path.join(__dirname) + '/public'))
 
 // middlewares
 app.use(bodyparser({
