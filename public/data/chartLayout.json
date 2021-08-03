@@ -1,57 +1,62 @@
-[{
-        "region": "left",
-        "key": "种植园用地区域分布",
-        "name": "Column1",
-        "showMenu": true,
-        "title": {
-            "isChecked": true,
-            "isCanClick": true
-        }
-    }, {
-        "region": "left",
-        "key": "耕地区域分布",
-        "name": "Pie1",
-        "showMenu": false,
-        "title": {
-            "isChecked": false,
-            "isCanClick": true
-        }
-    }, {
-        "region": "left",
-        "key": "草地区域分布",
-        "name": "Column3",
-        "showMenu": true,
-        "title": {
-            "isChecked": false,
-            "isCanClick": false
-        }
-    }, {
-        "region": "right",
-        "key": "耕地区域分布",
-        "name": "Column2",
-        "showMenu": false,
-        "title": {
-            "isChecked": false,
-            "isCanClick": true
-        }
-    }, {
-        "region": "right",
-        "key": "林地区域分布",
-        "name": "Column1",
-        "showMenu": true,
-        "title": {
-            "isChecked": true,
-            "isCanClick": false
-        }
-    },
-    {
-        "region": "center",
-        "key": "林地区域分布",
-        "name": "Column1",
-        "showMenu": true,
-        "title": {
-            "isChecked": true,
-            "isCanClick": false
-        }
+[
+  {
+    "region": "left",
+    "key": "种植园用地区域分布",
+    "name": "Column1",
+    "showMenu": true,
+    "title": {
+      "isChecked": true,
+      "isCanClick": true
     }
+  },
+  {
+    "region": "left",
+    "key": "耕地区域分布",
+    "name": "Pie1",
+    "showMenu": false,
+    "title": {
+      "isChecked": false,
+      "isCanClick": true
+    }
+  },
+  {
+    "region": "left",
+    "key": "草地区域分布",
+    "name": "Column3",
+    "showMenu": true,
+    "title": {
+      "isChecked": false,
+      "isCanClick": false
+    }
+  },
+  {
+    "region": "right",
+    "key": "耕地区域分布",
+    "name": "Column2",
+    "showMenu": false,
+    "title": {
+      "isChecked": false,
+      "isCanClick": true
+    }
+  },
+  {
+    "region": "right",
+    "key": "林地区域分布",
+    "name": "Column1",
+    "showMenu": true,
+    "title": {
+      "isChecked": true,
+      "isCanClick": false
+    }
+  },
+  {
+    "region": "center",
+    "key": "林地区域分布",
+    "name": "Column1",
+    "showMenu": true,
+    "title": {
+      "isChecked": true,
+      "isCanClick": false
+    }
+  }
 ]
