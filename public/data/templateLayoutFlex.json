@@ -4,7 +4,7 @@
     "type": "flex",
     "colStyle": [
       "25%",
-      "48%",
+      "50%",
       "25%"
     ]
   },
@@ -13,13 +13,13 @@
       "key": "种植园用地区域分布",
       "name": "Column1",
       "showMenu": true,
-      "region": "left",
       "title": {
         "isChecked": true,
         "isCanClick": true
       },
       "layout": {
-        "order": 1,
+        "region": "left",
+        "order": 2,
         "height": "250px"
       }
     },
@@ -27,13 +27,13 @@
       "key": "耕地区域分布",
       "name": "Pie1",
       "showMenu": false,
-      "region": "left",
       "title": {
         "isChecked": false,
         "isCanClick": true
       },
       "layout": {
-        "order": 2,
+        "region": "left",
+        "order": 1,
         "height": "250px"
       }
     },
@@ -41,12 +41,12 @@
       "key": "草地区域分布",
       "name": "Column3",
       "showMenu": true,
-      "region": "left",
       "title": {
         "isChecked": false,
         "isCanClick": false
       },
       "layout": {
+        "region": "left",
         "order": 3,
         "height": "250px"
       }
@@ -55,26 +55,12 @@
       "key": "耕地区域分布",
       "name": "Column2",
       "showMenu": false,
-      "region": "right",
       "title": {
         "isChecked": false,
         "isCanClick": true
       },
       "layout": {
-        "order": 1,
-        "height": "250px"
-      }
-    },
-    {
-      "key": "林地区域分布",
-      "name": "Column1",
-      "showMenu": true,
-      "region": "right",
-      "title": {
-        "isChecked": true,
-        "isCanClick": false
-      },
-      "layout": {
+        "region": "right",
         "order": 2,
         "height": "250px"
       }
@@ -83,14 +69,28 @@
       "key": "林地区域分布",
       "name": "Column1",
       "showMenu": true,
-      "region": "center",
       "title": {
         "isChecked": true,
         "isCanClick": false
       },
       "layout": {
+        "region": "right",
         "order": 1,
         "height": "250px"
+      }
+    },
+    {
+      "key": "林地区域分布",
+      "name": "Column1",
+      "showMenu": true,
+      "title": {
+        "isChecked": true,
+        "isCanClick": false
+      },
+      "layout": {
+        "region": "center",
+        "order": 1,
+        "height": "300px"
       }
     }
   ]

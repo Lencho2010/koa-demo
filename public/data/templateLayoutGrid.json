@@ -1,7 +1,13 @@
 {
+  "title": "全国土地利用构成统计-flex",
+  "layout": {
+    "display": "grid",
+    "grid-template-rows": "1fr 1fr",
+    "grid-template-columns": "1fr 1fr 1fr",
+    "grid-template-areas": "'a b c''d e f'"
+  },
   "charts": [
     {
-      "region": "left",
       "key": "种植园用地区域分布",
       "name": "Column1",
       "showMenu": true,
@@ -9,62 +15,68 @@
         "isChecked": true,
         "isCanClick": true
       },
-      "flexPosition": {
-        "region": "left",
-        "order": 1
-      },
-      "gridPosition": {
-        "gridArea": "a"
+      "layout": {
+        "grid-area": "a"
       }
     },
     {
-      "region": "left",
       "key": "耕地区域分布",
       "name": "Pie1",
       "showMenu": false,
       "title": {
         "isChecked": false,
         "isCanClick": true
+      },
+      "layout": {
+        "grid-area": "b"
       }
     },
     {
-      "region": "left",
       "key": "草地区域分布",
       "name": "Column3",
       "showMenu": true,
       "title": {
         "isChecked": false,
         "isCanClick": false
+      },
+      "layout": {
+        "grid-area": "c"
       }
     },
     {
-      "region": "right",
       "key": "耕地区域分布",
       "name": "Column2",
       "showMenu": false,
       "title": {
         "isChecked": false,
         "isCanClick": true
+      },
+      "layout": {
+        "grid-area": "d"
       }
     },
     {
-      "region": "right",
       "key": "林地区域分布",
       "name": "Column1",
       "showMenu": true,
       "title": {
         "isChecked": true,
         "isCanClick": false
+      },
+      "layout": {
+        "grid-area": "e"
       }
     },
     {
-      "region": "center",
       "key": "林地区域分布",
       "name": "Column1",
       "showMenu": true,
       "title": {
         "isChecked": true,
         "isCanClick": false
+      },
+      "layout": {
+        "grid-area": "f"
       }
     }
   ]
