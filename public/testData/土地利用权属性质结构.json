@@ -1,0 +1,76 @@
+{
+    "key": "土地利用权属性质结构",
+    "name": "土地利用权属性质结构",
+    "xAxis": [ "权属" ],
+    "yAxis": [ "面积" ],
+    "zAxis": null,
+    "xCode": "",
+    "curLevel": null,
+    "subLevel": null,
+    "minLevel": null,
+    "selectedXzqdm": null,
+    "colors": null,
+    "units": [
+      {
+        "type": "area",
+        "dataUnit": "平方米",
+        "defaultUnit": "亩",
+        "unitOptions": [ "平方米", "亩", "公顷", "平方千米", "万亩", "万公顷" ],
+        "unitOptionsExtend": [
+          {
+            "name": "平方米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "公顷",
+            "decimalDigits": 2
+          },
+          {
+            "name": "平方千米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万公顷",
+            "decimalDigits": 2
+          }
+        ]
+      }
+    ],
+    "dictionary": {},
+    "unitaxis": "y",
+    "data": [
+      {
+        "权属": "国有",
+        "面积": 34132.55
+      },
+      {
+        "权属": "集体",
+        "面积": 1112088.86
+      }
+    ],
+    "xColors": [
+      {
+        "keys": { "权属": "国有" },
+        "color": "rgb(247,48,18)"
+      },
+      {
+        "keys": { "权属": "集体" },
+        "color": "rgb(12,182,228)"
+      }
+    ],
+    "xDefaultCount": 0,
+    "table": null,
+    "canClick": false,
+    "hasNext": false,
+    "hasPrev": false,
+    "titleSelect": false,
+    "tipMessage": ""
+  }

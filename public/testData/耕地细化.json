@@ -1,0 +1,128 @@
+{
+    "key": "耕地细化",
+    "name": "耕地细化调查情况",
+    "xAxis": [ "细化地类" ],
+    "yAxis": [ "面积", "占比" ],
+    "zAxis": null,
+    "xCode": "",
+    "curLevel": null,
+    "subLevel": null,
+    "minLevel": null,
+    "selectedXzqdm": null,
+    "colors": null,
+    "units": [
+      {
+        "type": "area",
+        "dataUnit": "平方米",
+        "defaultUnit": "平方米",
+        "unitOptions": [ "平方米", "亩", "公顷", "平方千米", "万亩", "万公顷" ],
+        "unitOptionsExtend": [
+          {
+            "name": "平方米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "公顷",
+            "decimalDigits": 2
+          },
+          {
+            "name": "平方千米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万公顷",
+            "decimalDigits": 2
+          }
+        ]
+      },
+      {
+        "type": "percent",
+        "dataUnit": "%",
+        "defaultUnit": "%",
+        "unitOptions": [ "%" ],
+        "unitOptionsExtend": [
+          {
+            "name": "%",
+            "decimalDigits": 2
+          }
+        ]
+      }
+    ],
+    "dictionary": {},
+    "unitaxis": "y",
+    "data": [
+      {
+        "细化地类": "河道耕地",
+        "面积": null
+      },
+      {
+        "细化地类": "湖区耕地",
+        "面积": null
+      },
+      {
+        "细化地类": "林区耕地",
+        "面积": null
+      },
+      {
+        "细化地类": "牧区耕地",
+        "面积": null
+      },
+      {
+        "细化地类": "沙荒耕地",
+        "面积": null
+      },
+      {
+        "细化地类": "石漠化耕地",
+        "面积": null
+      },
+      {
+        "细化地类": "盐碱耕地",
+        "面积": null
+      }
+    ],
+    "xColors": [
+      {
+        "keys": { "细化地类": "河道耕地" },
+        "color": "rgb(180,235,247)"
+      },
+      {
+        "keys": { "细化地类": "湖区耕地" },
+        "color": "rgb(123,228,249)"
+      },
+      {
+        "keys": { "细化地类": "林区耕地" },
+        "color": "rgb(3,166,5)"
+      },
+      {
+        "keys": { "细化地类": "牧区耕地" },
+        "color": "rgb(191,254,97)"
+      },
+      {
+        "keys": { "细化地类": "沙荒耕地" },
+        "color": "rgb(206,196,102)"
+      },
+      {
+        "keys": { "细化地类": "石漠化耕地" },
+        "color": "rgb(243,221,221)"
+      },
+      {
+        "keys": { "细化地类": "盐碱耕地" },
+        "color": "rgb(200,204,210)"
+      }
+    ],
+    "xDefaultCount": 0,
+    "table": null,
+    "canClick": false,
+    "hasNext": false,
+    "hasPrev": false,
+    "titleSelect": false,
+    "tipMessage": "无相关数据"
+  }

@@ -1,0 +1,95 @@
+{
+    "key": "坡耕地与梯田耕地利用现状",
+    "name": "坡耕地与梯田耕地利用现状",
+    "xAxis": [ "耕地类型" ],
+    "yAxis": [ "面积" ],
+    "zAxis": null,
+    "xCode": "",
+    "curLevel": null,
+    "subLevel": null,
+    "minLevel": null,
+    "selectedXzqdm": null,
+    "colors": [ "rgb(220,233,156)", "rgb(160,218,67)", "rgb(49,181,115)" ],
+    "units": [
+      {
+        "type": "area",
+        "dataUnit": "平方米",
+        "defaultUnit": "亩",
+        "unitOptions": [ "平方米", "亩", "公顷", "平方千米", "万亩", "万公顷" ],
+        "unitOptionsExtend": [
+          {
+            "name": "平方米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "公顷",
+            "decimalDigits": 2
+          },
+          {
+            "name": "平方千米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万公顷",
+            "decimalDigits": 2
+          }
+        ]
+      },
+      {
+        "type": "area",
+        "dataUnit": "平方米",
+        "defaultUnit": "平方米",
+        "unitOptions": [ "[平方米]" ],
+        "unitOptionsExtend": [
+          {
+            "name": "平方米",
+            "decimalDigits": 2
+          }
+        ]
+      },
+      {
+        "type": "area",
+        "dataUnit": "平方米",
+        "defaultUnit": "平方米",
+        "unitOptions": [ "[平方米]" ],
+        "unitOptionsExtend": [
+          {
+            "name": "平方米",
+            "decimalDigits": 2
+          }
+        ]
+      }
+    ],
+    "dictionary": {},
+    "unitaxis": "y",
+    "data": [
+      {
+        "耕地类型": "平地",
+        "面积": 959842.61
+      },
+      {
+        "耕地类型": "坡地",
+        "面积": null
+      },
+      {
+        "耕地类型": "梯田",
+        "面积": null
+      }
+    ],
+    "xColors": [],
+    "xDefaultCount": 0,
+    "table": null,
+    "canClick": false,
+    "hasNext": false,
+    "hasPrev": false,
+    "titleSelect": false,
+    "tipMessage": ""
+  }

@@ -1,0 +1,100 @@
+{
+    "key": "耕地坡度",
+    "name": "耕地坡度分级面积占比",
+    "xAxis": [ "坡度级" ],
+    "yAxis": [ "面积" ],
+    "zAxis": null,
+    "xCode": "",
+    "curLevel": null,
+    "subLevel": null,
+    "minLevel": null,
+    "selectedXzqdm": null,
+    "colors": null,
+    "units": [
+      {
+        "type": "area",
+        "dataUnit": "平方米",
+        "defaultUnit": "亩",
+        "unitOptions": [ "平方米", "亩", "公顷", "平方千米", "万亩", "万公顷" ],
+        "unitOptionsExtend": [
+          {
+            "name": "平方米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "公顷",
+            "decimalDigits": 2
+          },
+          {
+            "name": "平方千米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万公顷",
+            "decimalDigits": 2
+          }
+        ]
+      }
+    ],
+    "dictionary": {},
+    "unitaxis": "y",
+    "data": [
+      {
+        "坡度级": "≤2°",
+        "面积": 959842.61
+      },
+      {
+        "坡度级": "2°~6°",
+        "面积": 0.0
+      },
+      {
+        "坡度级": "6°~15°",
+        "面积": 0.0
+      },
+      {
+        "坡度级": "15°~25°",
+        "面积": 0.0
+      },
+      {
+        "坡度级": ">25°",
+        "面积": 0.0
+      }
+    ],
+    "xColors": [
+      {
+        "keys": { "坡度级": "≤2°" },
+        "color": "rgb(255,235,177)"
+      },
+      {
+        "keys": { "坡度级": "2°~6°" },
+        "color": "rgb(255,207,63)"
+      },
+      {
+        "keys": { "坡度级": "6°~15°" },
+        "color": "rgb(251,166,3)"
+      },
+      {
+        "keys": { "坡度级": "15°~25°" },
+        "color": "rgb(255,153,92)"
+      },
+      {
+        "keys": { "坡度级": ">25°" },
+        "color": "rgb(255,117,35)"
+      }
+    ],
+    "xDefaultCount": 0,
+    "table": null,
+    "canClick": false,
+    "hasNext": false,
+    "hasPrev": false,
+    "titleSelect": false,
+    "tipMessage": ""
+  }

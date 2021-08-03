@@ -1,0 +1,88 @@
+{
+    "key": "恢复属性",
+    "name": "即可恢复与工程恢复面积",
+    "xAxis": [ "地类" ],
+    "yAxis": [ "面积", "占比" ],
+    "zAxis": null,
+    "xCode": "",
+    "curLevel": null,
+    "subLevel": null,
+    "minLevel": null,
+    "selectedXzqdm": null,
+    "colors": null,
+    "units": [
+      {
+        "type": "area",
+        "dataUnit": "平方米",
+        "defaultUnit": "平方米",
+        "unitOptions": [ "平方米", "亩", "公顷", "平方千米", "万亩", "万公顷" ],
+        "unitOptionsExtend": [
+          {
+            "name": "平方米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "公顷",
+            "decimalDigits": 2
+          },
+          {
+            "name": "平方千米",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万亩",
+            "decimalDigits": 2
+          },
+          {
+            "name": "万公顷",
+            "decimalDigits": 2
+          }
+        ]
+      },
+      {
+        "type": "percent",
+        "dataUnit": "%",
+        "defaultUnit": "%",
+        "unitOptions": [ "%" ],
+        "unitOptionsExtend": [
+          {
+            "name": "%",
+            "decimalDigits": 2
+          }
+        ]
+      }
+    ],
+    "dictionary": {},
+    "unitaxis": "y",
+    "data": [
+      {
+        "地类": "即可恢复",
+        "面积": null
+      },
+      {
+        "地类": "工程恢复",
+        "面积": 9197.33
+      }
+    ],
+    "xColors": [
+      {
+        "keys": { "地类": "即可恢复" },
+        "color": "rgb(214,255,53)"
+      },
+      {
+        "keys": { "地类": "工程恢复" },
+        "color": "rgb(7,254,162)"
+      }
+    ],
+    "xDefaultCount": 0,
+    "table": null,
+    "canClick": false,
+    "hasNext": false,
+    "hasPrev": false,
+    "titleSelect": false,
+    "tipMessage": ""
+  }
