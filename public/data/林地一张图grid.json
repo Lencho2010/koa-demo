@@ -8,8 +8,8 @@
   },
   "charts": [
     {
-      "key": "种植园用地区域分布",
-      "name": "Column1",
+      "key": "data1001",
+      "name": "Pie2",
       "showMenu": true,
       "title": {
         "isChecked": true,
@@ -20,8 +20,8 @@
       }
     },
     {
-      "key": "耕地区域分布",
-      "name": "Pie1",
+      "key": "data1002",
+      "name": "Pie2",
       "showMenu": false,
       "title": {
         "isChecked": false,
@@ -32,8 +32,8 @@
       }
     },
     {
-      "key": "草地区域分布",
-      "name": "Column3",
+      "key": "data1003",
+      "name": "Pie2",
       "showMenu": true,
       "title": {
         "isChecked": false,
@@ -44,8 +44,8 @@
       }
     },
     {
-      "key": "耕地区域分布",
-      "name": "Column2",
+      "key": "data1004",
+      "name": "Column6",
       "showMenu": false,
       "title": {
         "isChecked": false,
@@ -56,8 +56,8 @@
       }
     },
     {
-      "key": "林地区域分布",
-      "name": "Column1",
+      "key": "data1005",
+      "name": "Column6",
       "showMenu": true,
       "title": {
         "isChecked": true,
@@ -65,18 +65,6 @@
       },
       "layout": {
         "grid-area": "e"
-      }
-    },
-    {
-      "key": "林地区域分布",
-      "name": "Column1",
-      "showMenu": true,
-      "title": {
-        "isChecked": true,
-        "isCanClick": false
-      },
-      "layout": {
-        "grid-area": "f"
       }
     }
   ]

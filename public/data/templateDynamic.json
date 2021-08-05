@@ -1,82 +1,96 @@
 {
-  "title": "全国土地利用构成统计-grid",
+  "title": "全国土地利用构成统计-dynamic",
   "layout": {
-    "display": "grid",
-    "grid-template-rows": "1fr 1fr 1fr",
-    "grid-template-columns": "1fr 1fr 1fr",
-    "grid-template-areas": "'l m n''a b c''d e f'"
+    "type": "flex",
+    "colStyle": [
+      "30%",
+      "40%",
+      "30%"
+    ]
   },
   "charts": [
     {
-      "key": "种植园用地区域分布",
-      "name": "Column1",
+      "key": "data1001",
+      "name": "Pie2",
       "showMenu": true,
       "title": {
         "isChecked": true,
         "isCanClick": true
       },
       "layout": {
-        "grid-area": "a"
+        "region": "left",
+        "order": 2,
+        "height": "250px"
       }
     },
     {
-      "key": "耕地区域分布",
-      "name": "Pie1",
+      "key": "data1002",
+      "name": "Pie2",
       "showMenu": false,
       "title": {
         "isChecked": false,
         "isCanClick": true
       },
       "layout": {
-        "grid-area": "b"
+        "region": "left",
+        "order": 1,
+        "height": "250px"
       }
     },
     {
-      "key": "草地区域分布",
-      "name": "Column3",
+      "key": "data1003",
+      "name": "Pie2",
       "showMenu": true,
       "title": {
         "isChecked": false,
         "isCanClick": false
       },
       "layout": {
-        "grid-area": "c"
+        "region": "left",
+        "order": 3,
+        "height": "250px"
       }
     },
     {
-      "key": "耕地区域分布",
-      "name": "Column2",
+      "key": "data1001",
+      "name": "Pie2",
       "showMenu": false,
       "title": {
         "isChecked": false,
         "isCanClick": true
       },
       "layout": {
-        "grid-area": "d"
+        "region": "right",
+        "order": 2,
+        "height": "250px"
       }
     },
     {
-      "key": "林地区域分布",
-      "name": "Column1",
+      "key": "data1004",
+      "name": "Column6",
       "showMenu": true,
       "title": {
         "isChecked": true,
         "isCanClick": false
       },
       "layout": {
-        "grid-area": "e"
+        "region": "right",
+        "order": 1,
+        "height": "250px"
       }
     },
     {
-      "key": "林地区域分布",
-      "name": "Column1",
+      "key": "data1005",
+      "name": "Column6",
       "showMenu": true,
       "title": {
         "isChecked": true,
         "isCanClick": false
       },
       "layout": {
-        "grid-area": "f"
+        "region": "center",
+        "order": 1,
+        "height": "300px"
       }
     }
   ]

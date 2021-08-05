@@ -1,31 +1,17 @@
 {
-  "title": "全国土地利用构成统计-flex",
+  "title": "全国土地利用构成统计-dynamic",
   "layout": {
     "type": "flex",
     "colStyle": [
-      "25%",
-      "50%",
-      "25%"
+      "30%",
+      "40%",
+      "30%"
     ]
   },
   "charts": [
     {
-      "key": "种植园用地区域分布",
-      "name": "Column1",
-      "showMenu": true,
-      "title": {
-        "isChecked": true,
-        "isCanClick": true
-      },
-      "layout": {
-        "region": "left",
-        "order": 2,
-        "height": "250px"
-      }
-    },
-    {
-      "key": "耕地区域分布",
-      "name": "Pie1",
+      "key": "data1002",
+      "name": "Pie2",
       "showMenu": false,
       "title": {
         "isChecked": false,
@@ -38,8 +24,8 @@
       }
     },
     {
-      "key": "草地区域分布",
-      "name": "Column3",
+      "key": "data1003",
+      "name": "Pie2",
       "showMenu": true,
       "title": {
         "isChecked": false,
@@ -52,8 +38,8 @@
       }
     },
     {
-      "key": "耕地区域分布",
-      "name": "Column2",
+      "key": "data1001",
+      "name": "Pie2",
       "showMenu": false,
       "title": {
         "isChecked": false,
@@ -66,8 +52,8 @@
       }
     },
     {
-      "key": "林地区域分布",
-      "name": "Column1",
+      "key": "data1004",
+      "name": "Column6",
       "showMenu": true,
       "title": {
         "isChecked": true,
@@ -80,8 +66,8 @@
       }
     },
     {
-      "key": "土地利用权属性质结构",
-      "name": "Pie2",
+      "key": "data1005",
+      "name": "Column6",
       "showMenu": true,
       "title": {
         "isChecked": true,

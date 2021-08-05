@@ -1,87 +1,59 @@
 {
-  "title": "全国土地利用构成统计-flex",
+  "title": "全国土地利用构成统计-dynamic",
   "layout": {
     "type": "flex",
     "colStyle": [
-      "25%",
-      "50%",
-      "25%"
+      "30%",
+      "40%",
+      "30%"
     ]
   },
   "charts": [
     {
-      "key": "种植园用地区域分布",
-      "name": "Column1",
-      "showMenu": true,
-      "title": {
-        "isChecked": true,
-        "isCanClick": true
-      },
-      "layout": {
-        "region": "left",
-        "order": 2,
-        "height": "250px"
-      }
-    },
-    {
-      "key": "耕地区域分布",
-      "name": "Pie1",
-      "showMenu": false,
-      "title": {
-        "isChecked": false,
-        "isCanClick": true
-      },
-      "layout": {
-        "region": "left",
-        "order": 1,
-        "height": "250px"
-      }
-    },
-    {
-      "key": "草地区域分布",
-      "name": "Column3",
-      "showMenu": true,
-      "title": {
-        "isChecked": false,
-        "isCanClick": false
-      },
-      "layout": {
-        "region": "left",
-        "order": 3,
-        "height": "250px"
-      }
-    },
-    {
-      "key": "耕地区域分布",
-      "name": "Column2",
-      "showMenu": false,
-      "title": {
-        "isChecked": false,
-        "isCanClick": true
-      },
-      "layout": {
-        "region": "right",
-        "order": 2,
-        "height": "250px"
-      }
-    },
-    {
-      "key": "林地区域分布",
-      "name": "Column1",
-      "showMenu": true,
-      "title": {
-        "isChecked": true,
-        "isCanClick": false
-      },
-      "layout": {
-        "region": "right",
-        "order": 1,
-        "height": "250px"
-      }
-    },
-    {
-      "key": "土地利用权属性质结构",
+      "key": "data1001",
       "name": "Pie2",
+      "showMenu": true,
+      "title": {
+        "isChecked": true,
+        "isCanClick": true
+      },
+      "layout": {
+        "region": "left",
+        "order": 2,
+        "height": "250px"
+      }
+    },
+    {
+      "key": "data1001",
+      "name": "Pie2",
+      "showMenu": false,
+      "title": {
+        "isChecked": false,
+        "isCanClick": true
+      },
+      "layout": {
+        "region": "right",
+        "order": 2,
+        "height": "250px"
+      }
+    },
+    {
+      "key": "data1004",
+      "name": "Column6",
+      "showMenu": true,
+      "title": {
+        "isChecked": true,
+        "isCanClick": false
+      },
+      "layout": {
+        "region": "right",
+        "order": 1,
+        "height": "250px"
+      }
+    },
+    {
+      "key": "data1005",
+      "name": "Column6",
       "showMenu": true,
       "title": {
         "isChecked": true,
@@ -90,7 +62,7 @@
       "layout": {
         "region": "center",
         "order": 1,
-        "height": "300px"
+        "height": "250px"
       }
     }
   ]
