@@ -12,15 +12,16 @@ const index = require('./routes/index')
 const users = require('./routes/users')
 const testRouter = require('./routes/test')
 const linkQuery = require('./routes/linkQuery')
+const landStatus = require('./routes/landStatus')
 
 // error handler
 onerror(app)
 // 设置跨域
 app.use(cors({
-  origin: function (ctx) {
-    // 这里用 headers 和 header 属性皆可
-    return ctx.header.origin;
-  }
+    origin: function (ctx) {
+        // 这里用 headers 和 header 属性皆可
+        return ctx.header.origin;
+    }
 }))
 
 // 静态资源
@@ -28,22 +29,22 @@ app.use(require('koa-static')(path.join(__dirname) + '/public'))
 
 // middlewares
 app.use(bodyparser({
-  enableTypes: ['json', 'form', 'text']
+    enableTypes: ['json', 'form', 'text']
 }))
 app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
 
 app.use(views(__dirname + '/views', {
-  extension: 'pug'
+    extension: 'pug'
 }))
 
 // logger
 app.use(async (ctx, next) => {
-  const start = new Date()
-  await next()
-  const ms = new Date() - start
-  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
+    const start = new Date()
+    await next()
+    const ms = new Date() - start
+    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 
 // routes
@@ -51,10 +52,11 @@ app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
 app.use(testRouter.routes(), testRouter.allowedMethods())
 app.use(linkQuery.routes(), linkQuery.allowedMethods())
+app.use(landStatus.routes(), landStatus.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {
-  console.error('server error', err, ctx)
+    console.error('server error', err, ctx)
 });
 
 module.exports = app

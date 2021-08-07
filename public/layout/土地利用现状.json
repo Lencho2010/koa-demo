@@ -1,0 +1,1051 @@
+{
+  "title": "土地利用现状总体情况专题",
+  "canFulled": true,
+  "extendjs": "土地利用专题,行政区排名筛选",
+  "font": {
+		"show": true,                     
+		"index": 0,						  
+		"data": [
+			{
+				"text": "小号字体",		 
+				"chart": {				  
+					"title": "16px",	  
+					"subTitle": "12px",  
+					"cardSub": "14px",   
+					"xAxis": "12px",     
+					"yAxis": "12px",      
+					"legend": "12px"     
+				},
+				"table": {				  
+					"title": "16px",	  
+					"head": "14px",       
+					"body": "12px"       
+				}
+			},
+			{
+				"text": "中号字体",
+				"chart": {
+					"title": "18px",
+					"subTitle": "14px",
+					"cardSub": "16px",
+					"xAxis": "14px",
+					"yAxis": "14px",
+					"legend": "14px"
+				},
+				"table": {
+					"title": "18px",
+					"head": "16px",
+					"body": "14px"
+				}
+			},
+			{
+				"text": "大号字体",
+				"chart": {
+					"title": "20px",
+					"subTitle": "16px",
+					"cardSub": "16px",
+					"xAxis": "14px",
+					"yAxis": "14px",
+					"legend": "16px"
+				},
+				"table": {
+					"title": "20px",
+					"head": "16px",
+					"body": "14px"
+				}
+			}
+		]
+  },
+  "mini": {
+    "charts": [
+
+      {
+        "key": "土地利用结构",
+        "type": "pie_3",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 30,
+        "canSelect": true,
+        "legend": {
+          "show": false
+        },
+        "selectSync": true,
+        "titleClick": true,
+        "click": {
+          "canClick": true,
+          "canSelect": false,
+          "chart": {
+            "type": "column_1",
+            "row": 1,
+            "rowSpan": 1,
+            "column": 1,
+            "columnSpan": 30,
+            "legend": {
+              "show": false
+            },
+            "titleClick": true,
+            "click": {
+              "canClick": true,
+              "canSelect": false
+            }
+          }
+        },
+        "canMaximized": true,
+        "maxItem": {
+          "canFulled": true,
+          "charts": [
+            {
+              "key": "土地利用结构",
+              "type": "pie_3",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 30,
+              "canSelect": true,
+              "legend": {
+                "show": false
+              },
+			"selectSync": true,
+              "titleClick": true,
+              "click": {
+                "canClick": true,
+                "canSelect": true
+              }
+            },
+            {
+              "key": "土地利用结构一级地类",
+              "type": "column_5",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 31,
+              "columnSpan": 42,
+              "legend": {
+                "show": true
+              },
+              "titleClick": true,
+              "click": {
+                "canClick": true,
+                "canSelect": false,
+                "chart": {
+                  "type": "column_1",
+                  "row": 1,
+                  "rowSpan": 1,
+                  "column": 31,
+                  "columnSpan": 42,
+                  "legend": {
+                    "show": false
+                  },
+                  "titleClick": true,
+                  "click": {
+                    "canClick": true,
+                    "canSelect": false
+                  }
+                }
+              }
+            }
+          ],
+          "fullItem": {
+            "rowStyle": "3fr 5fr",
+            "charts": [
+              {
+                "key": "土地利用结构一级地类",
+                "type": "column_2",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": false
+                },
+               
+                "click": {
+                  "canClick": true,
+                  "canSelect": false,
+                  "chart": {
+                    "type": "column_1",
+                    "row": 1,
+                    "rowSpan": 1,
+                    "column": 1,
+                    "columnSpan": 72,
+                    "legend": {
+                      "show": false
+                    },
+                    "titleClick": true,
+                    "click": {
+                      "canClick": true,
+                      "canSelect": false
+                    }
+                  }
+                }
+              },
+              {
+                "key": "土地利用结构一级地类",
+                "type": "table_1",
+                "row": 2,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "下一级政区某地类面积最大化堆叠",
+        "type": "column_21",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 31,
+        "columnSpan": 42,
+        "titleClick": false,
+        "legend": {
+          "show": true
+        },
+		"click": {
+          "canClick": false,
+          "canSelect": false
+        },
+        "canMaximized": true,
+        "maxItem": {
+          "canFulled": true,
+          "charts": [
+            {
+              "key": "下一级政区某地类面积最大化堆叠",
+              "type": "column_21",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              },
+              "click": {
+                "canClick": true,
+                "canSelect": true
+              }
+            }
+          ],
+          "fullItem": {
+            "rowStyle": "3fr 5fr",
+            "charts": [
+              {
+                "key": "下一级政区某地类面积",
+                "type": "column_7",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "canSelect": true,
+				
+                "legend": {
+                  "show": true
+                }
+              },
+              {
+                "key": "下一级政区某地类面积",
+                "type": "table_1",
+                "row": 2,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72
+              }
+            ]
+          }
+        }
+      }
+
+    ]
+  },
+  "full": {
+    "rowStyle": "240px 240px 240px 240px",
+    "charts": [
+      {
+        "key": "土地利用结构",
+        "type": "pie_3",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 18,
+        "canSelect": true,
+		"selectSync": true,
+        "click": {
+          "canClick": true,
+
+          "chart": {
+            "type": "column_1",
+            "row": 1,
+            "rowSpan": 1,
+            "column": 1,
+            "columnSpan": 18,
+            "legend": {
+              "show": true
+            }
+          }
+        },
+        "legend": {
+          "show": false
+        },
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "土地利用结构一级地类",
+              "type": "column_2",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "sumTitle": "土地调查总面积",
+              "subTitleRestrict":true,
+              "legend": {
+                "show": false
+              }
+            },
+            {
+              "key": "土地利用结构一级地类",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "土地利用结构",
+                "type": "pie_3",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 30,
+                "legend": {
+                  "show": false
+                },
+				"selectSync": true,
+                "canSelect": true,
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true,
+                  "chart": {
+                    "type": "column_1",
+                    "row": 1,
+                    "rowSpan": 1,
+                    "column": 1,
+                    "columnSpan": 30,
+                    "legend": {
+                      "show": true
+                    },
+                    "titleClick": true,
+                    "click": {
+                      "canClick": true,
+                      "canSelect": true
+                    }
+                  }
+                }
+              },
+              {
+                "key": "土地利用结构一级地类",
+                "type": "column_5",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 31,
+                "columnSpan": 42,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "城镇村及工矿用地面积",
+        "type": "pie_1",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 19,
+        "columnSpan": 20,
+        "legend": {
+          "show": false
+        },
+        "sumTitle": "城镇村及工矿用地总面积",
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "城镇村及工矿用地各地类",
+              "type": "column_3",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "城镇村及工矿用地各地类",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "城镇村及工矿用地各地类",
+                "type": "column_3",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "土地利用权属性质结构",
+        "type": "ring_1",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 39,
+        "columnSpan": 18,
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "土地利用权属性质结构",
+              "type": "ring_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 28
+            },
+            {
+              "key": "土地权属构成->按工作分类",
+              "type": "column_4",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 29,
+              "columnSpan": 44,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "土地权属构成->按工作分类",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "土地利用权属性质结构",
+                "type": "ring_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+				"titleClick": true,
+                "columnSpan": 28
+              },
+              {
+                "key": "土地权属构成->按工作分类",
+                "type": "column_4",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 29,
+                "columnSpan": 44,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "三大类",
+        "type": "pie_1",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 57,
+        "columnSpan": 25,
+        "legend": {
+          "show": false
+        },
+        "canFulled": true,
+        "canDowned": true,
+        "click": {
+          "canClick": true,
+          "chart": {
+            "type": "pie_3",
+            "row": 1,
+            "rowSpan": 1,
+            "column": 57,
+            "columnSpan": 25,
+            "legend": {
+              "show": true
+            }
+          }
+        },
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "三大类->农",
+              "type": "pie_3",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 24,
+              "legend": {
+                "show": false
+              }
+            },
+            {
+              "key": "三大类->建",
+              "type": "pie_3",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 25,
+              "columnSpan": 24,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "三大类->未",
+              "type": "pie_3",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 49,
+              "columnSpan": 24,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "三大类",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              },
+              "titleClick": true,
+              "click": {
+                "canClick": true,
+                "canSelect": true
+              }
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "三大类->农",
+                "type": "pie_3",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 24,
+                "legend": {
+                  "show": false
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              },
+              {
+                "key": "三大类->建",
+                "type": "pie_3",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 25,
+                "columnSpan": 24,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              },
+              {
+                "key": "三大类->未",
+                "type": "pie_3",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 49,
+                "columnSpan": 24,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "耕地结构",
+        "type": "pie_1",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 18,
+        "legend": { "show": false },
+        "canMaximized": false,
+        "canFulled": false
+      },
+      {
+        "key": "耕地种植属性",
+        "type": "pie_1",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 19,
+        "columnSpan": 20,
+        "legend": {
+          "show": false
+        },
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "耕地种植属性->各种植属性",
+              "type": "column_4",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "耕地种植属性->各种植属性",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "耕地种植属性",
+                "type": "pie_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 30,
+                "legend": {
+                  "show": false
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              },
+              {
+                "key": "耕地种植属性->各种植属性",
+                "type": "column_4",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 31,
+                "columnSpan": 42,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "耕地细化",
+        "type": "column_2",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 39,
+        "columnSpan": 18,
+        "legend": {
+          "show": false
+        },
+        "sumTitle": "细化地类总面积",
+        "sort": "desc",
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "耕地细化内各地类",
+              "type": "column_4",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "耕地细化内各地类",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "耕地细化",
+                "type": "pie_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 36,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              },
+              {
+                "key": "耕地细化内各地类",
+                "type": "column_4",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 37,
+                "columnSpan": 36,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "种植园用地结构",
+        "type": "pie_1",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 57,
+        "columnSpan": 25,
+        "legend": {
+          "show": true
+        },
+       
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "rowStyle": "3fr 5fr",
+          "canMined": true,
+          "charts": [
+            {
+              "key": "种植园用地结构",
+              "type": "pie_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 36,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "种植园用地结构",
+              "type": "column_2",
+              "sumTitle": "种植园用地总面积",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 37,
+              "columnSpan": 36,
+              "legend": {
+                "show": false
+              }
+            },
+            {
+              "key": "种植园用地结构",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+
+            "charts": [
+              {
+                "key": "种植园用地结构",
+                "type": "pie_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 36,
+				"titleClick": true,
+                "legend": {
+                  "show": true
+                },
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              },
+              {
+                "key": "种植园用地结构",
+                "type": "column_2",
+                "sumTitle": "种植园用地总面积",
+                "row": 1,
+                "rowSpan": 1,
+				"titleClick": true,
+                "column": 37,
+                "columnSpan": 36,
+                "legend": {
+                  "show": false
+                },
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "林地结构",
+        "type": "pie_1",
+        "row": 3,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 18,
+        "legend": { "show": true },
+       
+        "canMaximized": false
+      },
+      {
+        "key": "草地结构",
+        "type": "pie_1",
+        "row": 3,
+        "rowSpan": 1,
+        "column": 19,
+        "columnSpan": 20,
+        "legend": { "show": true },
+        
+        "canMaximized": false
+      },
+      {
+        "key": "水域及水利设施用地结构",
+        "type": "pie_3",
+        "row": 3,
+        "rowSpan": 1,
+        "column": 39,
+        "columnSpan": 18,
+        "legend": {
+          "show": true
+        },
+        
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "rowStyle": "3fr 5fr",
+          "canMined": true,
+          "charts": [
+            {
+              "key": "水域及水利设施用地结构详情",
+              "type": "graph_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "canSelect": true,
+			  "titleClick" : true,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "水域及水利设施用地结构详情",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "水域及水利设施用地结构详情",
+                "type": "graph_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+				"titleClick" : true,
+                "columnSpan": 72,
+                "legend": {
+                  "show": true
+                },
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+
+          }
+        }
+      },
+      {
+        "key": "湿地结构",
+        "type": "column_5",
+        "row": 3,
+        "rowSpan": 1,
+        "column": 57,
+        "columnSpan": 25,
+        "legend": { "show": true },
+        
+        "canMaximized": false
+      },
+      {
+        "key": "下一级政区某地类面积最大化",
+        "type": "column_7",
+        "row": 4,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 80,
+        "legend": {
+          "show": true
+        },
+        "canSelect": true,
+        "click": {
+          "canClick": true,
+          "canSelect": true
+        },
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "下一级政区某地类面积最大化",
+              "type": "column_7",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "canSelect": true,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "下一级政区某地类面积",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "下一级政区某地类面积最大化",
+                "type": "column_7",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+				"titleClick": true,
+                "legend": {
+                  "show": true
+                },
+                "canSelect": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true,
+                  "canHover": true,
+                   "canDbClick": true
+                }
+              }
+            ]
+
+          }
+        }
+      }
+    ]
+  }
+}

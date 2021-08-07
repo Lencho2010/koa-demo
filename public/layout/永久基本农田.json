@@ -1,0 +1,856 @@
+{
+  "title": "永久基本农田专题",
+  "canFulled": true,
+  "extendjs": "永久基本农田专题",
+  "mini": {
+    "charts": [
+      {
+        "key": "永久基本农田面积",
+        "type": "card_two",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 11,
+        "legend": {
+          "show": false
+        },
+        "canMaximized": false
+      },
+      {
+        "key": "永久基本农田土地利用现状",
+        "type": "pie_1",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 12,
+        "columnSpan": 18,
+        "legend": {
+          "show": false
+        },
+        "titleClick": true,
+        "canMaximized": true,
+        "click": {
+          "canClick": true,
+          "canSelect": false,
+          "chart": {
+            "type": "column_6",
+            "row": 1,
+            "rowSpan": 1,
+            "column": 12,
+            "columnSpan": 18,
+            "legend": {
+              "show": true
+            },
+            "titleClick": true,
+            "click": {
+              "canClick": true,
+              "canSelect": false
+            }
+          }
+        },
+        "maxItem": {
+          "canFulled": true,
+          "charts": [
+            {
+              "key": "永久基本农田土地利用现状->最大化",
+              "type": "pie_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 28,
+              "legend": {
+                "show": false
+              },
+              "titleClick": true,
+              "click": {
+                "canClick": true,
+                "canSelect": true
+              }
+            },
+            {
+              "key": "永久基本农田土地利用现状->一级地类",
+              "type": "column_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 29,
+              "columnSpan": 44,
+              "legend": {
+                "show": false
+              },
+              "titleClick": true,
+              "click": {
+                "canClick": true,
+                "canSelect": true,
+                "chart": {
+                  "type": "column_2",
+                  "row": 1,
+                  "rowSpan": 1,
+                  "column": 29,
+                  "columnSpan": 44,
+                  "legend": {
+                    "show": false
+                  },
+                  "titleClick": true,
+                  "click": {
+                    "canClick": true,
+                    "canSelect": true
+                  }
+                }
+              }
+            }
+          ],
+          "fullItem": {
+            "rowStyle": "3fr 5fr",
+            "charts": [
+              {
+                "key": "永久基本农田土地利用现状",
+                "type": "pie_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 28,
+                "legend": {
+                  "show": false
+                }
+              },
+              {
+                "key": "永久基本农田土地利用现状->一级地类",
+                "type": "column_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 29,
+                "columnSpan": 44,
+                "legend": {
+                  "show": false
+                },
+                "click": {
+                  "canClick": true,
+                  "canSelect": true,
+                  "chart": {
+                    "type": "column_2",
+                    "row": 1,
+                    "rowSpan": 1,
+                    "column": 29,
+                    "columnSpan": 44,
+                    "legend": {
+                      "show": false
+                    },
+                    "titleClick": true
+                  }
+                }
+              },
+              {
+                "key": "永久基本农田土地利用现状->地类详情",
+                "type": "table_1",
+                "row": 2,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田内耕地坡度分级面积",
+        "type": "pie_2",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 30,
+        "columnSpan": 14,
+        "legend": {
+          "show": false
+        },
+        "titleClick": true,
+        "click": {
+          "canClick": true,
+          "canSelect": true
+        },
+        "canMaximized": true,
+        "maxItem": {
+          "canFulled": true,
+          "charts": [
+            {
+              "key": "永久基本农田内耕地坡度分级面积->各耕地面积",
+              "type": "column_4",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              },
+              "titleClick": true,
+              "click": {
+                "canClick": true,
+                "canSelect": true
+              }
+            }
+          ],
+          "fullItem": {
+            "rowStyle": "3fr 5fr",
+            "charts": [
+              {
+                "key": "永久基本农田内耕地坡度分级面积->各耕地面积",
+                "type": "column_4",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": true
+                }
+              },
+              {
+                "key": "永久基本农田内耕地坡度分级面积->各耕地面积",
+                "type": "table_1",
+                "row": 2,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田内耕地质量等别",
+        "type": "pie_1",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 44,
+        "columnSpan": 15,
+        "legend": {
+          "show": false
+        },
+        "titleClick": true,
+        "click": {
+          "canClick": true,
+          "canSelect": true
+        },
+        "canMaximized": false,
+        "maxItem": {
+          "canFulled": true,
+          "charts": [
+            {
+              "key": "永久基本农田内耕地质量等别->各等别",
+              "type": "column_5",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": false
+              }
+            }
+          ],
+          "fullItem": {
+            "rowStyle": "3fr 5fr",
+            "charts": [
+              {
+                "key": "永久基本农田内耕地质量等别->各等别",
+                "type": "column_5",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": true
+                }
+              },
+              {
+                "key": "永久基本农田内耕地质量等别->各等别",
+                "type": "table_1",
+                "row": 2,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田种植类型面积",
+        "type": "pie_2",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 59,
+        "columnSpan": 14,
+        "legend": {
+          "show": false
+        },
+        "titleClick": true,
+        "click": {
+          "canClick": true,
+          "canSelect": true
+        },
+        "canMaximized": true,
+        "maxItem": {
+          "canFulled": true,
+          "charts": [
+            {
+              "key": "永久基本农田种植类型面积->各种植属性",
+              "type": "column_4",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "titleClick": true,
+              "click": {
+                "canClick": true
+              },
+              "legend": {
+                "show": true
+              }
+            }
+          ],
+          "fullItem": {
+            "rowStyle": "3fr 5fr",
+            "charts": [
+              {
+                "key": "永久基本农田种植类型面积->各种植属性",
+                "type": "column_4",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": true
+                }
+              },
+              {
+                "key": "永久基本农田种植类型面积->各种植属性",
+                "type": "table_1",
+                "row": 2,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "full": {
+    "rowStyle": "280px 280px 280px",
+    "charts": [
+      {
+        "key": "永久基本农田面积",
+        "type": "card_two",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 12,
+        "legend": {
+          "show": false
+        },
+        "canFulled": false
+      },
+      {
+        "key": "永久基本农田土地利用现状",
+        "type": "pie_1",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 13,
+        "columnSpan": 22,
+        "legend": {
+          "show": false
+        },
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田土地利用现状",
+              "type": "pie_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 28,
+              "legend": {
+                "show": false
+              }
+            },
+            {
+              "key": "永久基本农田土地利用现状->一级地类",
+              "type": "column_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 29,
+              "columnSpan": 44,
+              "legend": {
+                "show": false
+              }
+            },
+            {
+              "key": "永久基本农田土地利用现状->地类详情",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田土地利用现状",
+                "type": "pie_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 28,
+                "legend": {
+                  "show": false
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              },
+              {
+                "key": "永久基本农田土地利用现状->一级地类",
+                "type": "column_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 29,
+                "columnSpan": 44,
+                "legend": {
+                  "show": false
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田内耕地坡度分级面积",
+        "type": "pie_2",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 35,
+        "columnSpan": 17,
+        "titleClick": true,
+        "legend": {
+          "show": false
+        },
+        "canFulled": true,
+        "canDowned": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田内耕地坡度分级面积->各耕地面积",
+              "type": "column_4",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "永久基本农田内耕地坡度分级面积->各耕地面积",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田内耕地坡度分级面积->各耕地面积",
+                "type": "column_4",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": true
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田内耕地质量等别",
+        "type": "pie_1",
+        "row": 1,
+        "rowSpan": 1,
+        "column": 52,
+        "columnSpan": 21,
+        "titleClick": true,
+        "legend": {
+          "show": false
+        },
+        "canDowned": true,
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田内耕地质量等别->各等别",
+              "type": "column_5",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "titleClick": true,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "永久基本农田内耕地质量等别->各等别",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田内耕地质量等别",
+                "type": "column_5",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "titleClick": true,
+                "legend": {
+                  "show": false
+                },
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田种植类型面积",
+        "type": "pie_1",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 20,
+        "titleClick": true,
+        "legend": {
+          "show": true
+        },
+        "canDowned": true,
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田种植类型面积->各种植属性",
+              "type": "column_4",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "永久基本农田种植类型面积->各种植属性",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田种植类型面积->各种植属性",
+                "type": "column_4",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canHover": true
+                },
+                "legend": {
+                  "show": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田内耕地细化地类面积",
+        "type": "column_1",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 21,
+        "columnSpan": 18,
+        "legend": {
+          "show": false
+        },
+        "sort": "desc",
+        "canDowned": true,
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田内耕地细化地类面积",
+              "type": "column_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "永久基本农田内耕地细化地类面积",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田内耕地细化地类面积",
+                "type": "column_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": false
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田内可调整地类面积",
+        "type": "column_2",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 39,
+        "columnSpan": 18,
+        "legend": {
+          "show": false
+        },
+        "canDowned": true,
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田内可调整地类面积",
+              "type": "column_2",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": false
+              }
+            },
+            {
+              "key": "永久基本农田内可调整地类面积",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田内可调整地类面积",
+                "type": "column_2",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": false
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "永久基本农田内即可恢复与工程恢复面积",
+        "type": "column_1",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 57,
+        "columnSpan": 16,
+        "titleClick": true,
+        "legend": {
+          "show": false
+        },
+        "canDowned": true,
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田内即可恢复与工程恢复面积->各一级地类",
+              "type": "column_4",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "永久基本农田内即可恢复与工程恢复面积->各一级地类",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田内即可恢复与工程恢复面积->各一级地类",
+                "type": "column_4",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                },
+                "legend": {
+                  "show": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "行政区永久基本农田面积",
+        "type": "column_7",
+        "row": 3,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 72,
+        "legend": {
+          "show": true
+        },
+        "canSelect": true,
+        "canDowned": true,
+        "click": {
+          "canClick": true,
+          "canSelect": true
+        },
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "行政区永久基本农田面积",
+              "type": "column_7",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              },
+              "canSelect": true
+            },
+            {
+              "key": "行政区永久基本农田面积",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "行政区永久基本农田面积",
+                "type": "column_7",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "canSelect": true,
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canHover": true
+                },
+                "legend": {
+                  "show": true
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

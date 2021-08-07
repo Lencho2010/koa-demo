@@ -12,7 +12,7 @@ router.get('/', async (ctx) => {
             key
         } = ctx.params
 
-        const retData = await getData(key)
+        const retData = await getData(key)  //土地利用结构
         ctx.body = retData
         // ctx.body = `获取key为[${key}]的关联分析数据`;
     });

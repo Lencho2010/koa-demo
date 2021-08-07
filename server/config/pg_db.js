@@ -12,7 +12,7 @@ const prodConfig = {
     password: '123',
     host: '192.168.102.200',
     port: 5432,
-    database: 'gtdckjk',
+    database: 'gtdcywk',
     // ssl: true
 };
 
