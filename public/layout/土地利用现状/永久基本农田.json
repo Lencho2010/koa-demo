@@ -184,10 +184,19 @@
         "canMaximized": true,
         "maxItem": {
           "canFulled": true,
+          "layout": {
+            "display": "grid",
+            "grid-template-rows": "100%",
+            "grid-template-columns": "50% 50%",
+            "grid-template-areas": "'a a'"
+          },
           "charts": [
             {
-              "key": "永久基本农田内耕地坡度分级面积->各耕地面积",
-              "type": "column_4",
+              "layout": {
+                "grid-area": "a"
+              },
+              "key": "永久基本农田土地利用现状",
+              "type": "pie_1",
               "row": 1,
               "rowSpan": 1,
               "column": 1,
@@ -253,8 +262,17 @@
         "canMaximized": false,
         "maxItem": {
           "canFulled": true,
+          "layout": {
+            "display": "grid",
+            "grid-template-rows": "100%",
+            "grid-template-columns": "50% 50%",
+            "grid-template-areas": "'a a'"
+          },
           "charts": [
             {
+              "layout": {
+                "grid-area": "a"
+              },
               "key": "永久基本农田内耕地质量等别->各等别",
               "type": "column_5",
               "row": 1,
