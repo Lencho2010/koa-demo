@@ -231,7 +231,7 @@
                     "layout": {
                       "grid-area": "b"
                     },
-                    "key": "永久基本农田内耕地质量等别",
+                    "key": "永久基本农田土地利用现状",
                     "type": "pie_1",
                     "row": 1,
                     "rowSpan": 1,
