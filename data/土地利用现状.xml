@@ -853,6 +853,10 @@
                 <!-- <chart name="永久基本农田土地利用现状->按工作分类->耕地" layer-ref="全国永久基本农田土地利用现状{yearfilter}_耕地_二级类@DLBM_YJJBNT;基础底图影像{yearfilter}" title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按工作分类耕地面积" field-x="地类" field-y="面积,占比" unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田按工作分类" colorfield="地类" defaultunit="万公顷,%">
                 </chart> -->
             </chart>
+            <chart name="永久基本农田土地利用现状->{childname}" layer-ref="全国永久基本农田{yearfilter}_{childname};基础底图影像{yearfilter}"
+                   title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按工作分类耕地面积" field-x="地类" field-y="面积,占比"
+                   unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="永久基本农田按工作分类" colorfield="地类"
+                   defaultunit="万公顷,%"/>
             <chart name="永久基本农田土地利用现状->最大化" layer-ref="全国永久基本农田土地利用现状{yearfilter}@DLBM_GDFGD;基础底图影像{yearfilter}"
                    title="{xzqh}永久基本农田土地利用现状" dataref="永久基本农田土地利用现状按工作分类" field-x="地类" field-y="面积,占比"
                    unitoptions="[亩;公顷;平方千米:1;万亩;万公顷],[%]" colorcategory="永久基本农田按工作分类" colorfield="地类"
@@ -893,7 +897,7 @@
             <chart name="永久基本农田内耕地坡度分级面积" layer-ref="全国永久基本农田耕地坡度级别{yearfilter}@GDPDJB_YJJBNTGDPDJB;基础底图影像{yearfilter}"
                    title="{xzqh}永久基本农田内耕地坡度分级面积" dataref="永久基本农田内耕地坡度分级面积" field-x="坡度级" field-y="面积,占比"
                    unitoptions="[亩;公顷;平方千米;万亩;万公顷],[%]" colorcategory="耕地坡度分类" colorfield="坡度级" defaultunit="万公顷,%"/>
-            <chart name="永久基本农田内耕地坡度分级面积->各耕地面积" layer-ref="全国永久基本农田耕地类型{yearfilter}@GDLX_YJJBNTGDLX;基础底图影像{yearfilter}"
+            <chart name="永久基本农田内耕地坡度分级面积_各耕地面积" layer-ref="全国永久基本农田耕地类型{yearfilter}@GDLX_YJJBNTGDLX;基础底图影像{yearfilter}"
                    layer-filter="Q_gdpdjb_S_IN={childname}" layer-filter-dickey="DIC_GDPDFJ_FILITER"
                    layer-filter-reverse="true" title="{xzqh}永久基本农田内耕地坡度分级面积" dataref="永久基本农田内各耕地坡度分级面积" field-x="坡度级"
                    field-y="平地,坡地,梯田" unitoptions="[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷],[亩;公顷;平方千米;万亩;万公顷]"

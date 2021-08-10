@@ -57,9 +57,11 @@ const queryFun = async ({themeGroup, themeItem, chartKey, queryParams}) => {
     if (!queryChart) return {}
     const dataRef = chartTheme.datatable.find(item => item._attributes.name === queryChart._attributes.dataref)
 
-    const mapObj = gainMapper(queryParams);
+    const mapObj = {...queryParams}; //gainMapper(queryParams);
+    console.log('queryParams....', queryParams);
     const querySql = dataRef._text;
     const parseSql = regReplace(querySql, mapObj);
+    console.log('querySql....', parseSql);
     const attribute = queryChart._attributes;
     const xAxis = attribute['field-x'].split(',');
     const x = xAxis[0];
@@ -119,4 +121,4 @@ const queryFunFromLocal = async ({themeGroup, themeItem, chartKey, queryParams})
     }
 }
 
-module.exports = queryFunFromLocal
+module.exports = queryFun
