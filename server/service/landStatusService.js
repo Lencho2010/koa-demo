@@ -94,7 +94,7 @@ const queryFunFromLocal = async ({themeGroup, themeItem, chartKey, queryParams})
     if (!queryChart) return {}
     const dataRef = chartTheme.datatable.find(item => item._attributes.name === queryChart._attributes.dataref)
 
-    const mapObj = gainMapper(queryParams);
+    const mapObj = {...queryParams};//const mapObj = gainMapper(queryParams);
     const querySql = dataRef._text;
     const parseSql = regReplace(querySql, mapObj);
     const attribute = queryChart._attributes;

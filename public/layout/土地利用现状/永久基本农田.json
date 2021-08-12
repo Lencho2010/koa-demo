@@ -11,6 +11,7 @@
     },
     "charts": [
       {
+        "extendJs": "永久基本农田土地利用现状",
         "layout": {
           "grid-area": "a"
         },
@@ -400,7 +401,7 @@
       "display": "grid",
       "grid-template-rows": "33.33% 33.33% 33.33%",
       "grid-template-columns": "25% 25% 25% 25%",
-      "grid-template-areas": "'. . . . ''a b . .''c d . 。'"
+      "grid-template-areas": "'a b c d''f f e e''h h h h'"
     },
     "charts": [
       {
@@ -785,6 +786,209 @@
           "show": false
         },
         "titleClick": true
+      },
+      {
+        "key": "永久基本农田内耕地细化地类面积",
+        "type": "column_4",
+        "layout": {
+          "grid-area": "e"
+        },
+        "title": {
+          "isChecked": true,
+          "isCanClick": true
+        },
+        "row": 2,
+        "rowSpan": 1,
+        "column": 21,
+        "columnSpan": 18,
+        "legend": {
+          "show": false
+        },
+        "sort": "desc",
+        "canDowned": true,
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田内耕地细化地类面积",
+              "type": "column_1",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              }
+            },
+            {
+              "key": "永久基本农田内耕地细化地类面积",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田内耕地细化地类面积",
+                "type": "column_1",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": false
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "layout": {
+          "grid-area": "f"
+        },
+        "title": {
+          "isChecked": true,
+          "isCanClick": true
+        },
+        "key": "永久基本农田内可调整地类面积",
+        "type": "column_4",
+        "row": 2,
+        "rowSpan": 1,
+        "column": 39,
+        "columnSpan": 18,
+        "legend": {
+          "show": false
+        },
+        "canDowned": true,
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "永久基本农田内可调整地类面积",
+              "type": "column_2",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": false
+              }
+            },
+            {
+              "key": "永久基本农田内可调整地类面积",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "永久基本农田内可调整地类面积",
+                "type": "column_2",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "legend": {
+                  "show": false
+                },
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canSelect": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "layout": {
+          "grid-area": "h"
+        },
+        "title": {
+          "isChecked": true,
+          "isCanClick": true
+        },
+        "key": "行政区永久基本农田面积",
+        "type": "column_6",
+        "row": 3,
+        "rowSpan": 1,
+        "column": 1,
+        "columnSpan": 72,
+        "legend": {
+          "show": true
+        },
+        "canSelect": true,
+        "canDowned": true,
+        "click": {
+          "canClick": true,
+          "canSelect": true
+        },
+        "canFulled": true,
+        "fullItem": {
+          "canMined": true,
+          "rowStyle": "3fr 5fr",
+          "charts": [
+            {
+              "key": "行政区永久基本农田面积",
+              "type": "column_7",
+              "row": 1,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72,
+              "legend": {
+                "show": true
+              },
+              "canSelect": true
+            },
+            {
+              "key": "行政区永久基本农田面积",
+              "type": "table_1",
+              "row": 2,
+              "rowSpan": 1,
+              "column": 1,
+              "columnSpan": 72
+            }
+          ],
+          "maxItem": {
+            "charts": [
+              {
+                "key": "行政区永久基本农田面积",
+                "type": "column_7",
+                "row": 1,
+                "rowSpan": 1,
+                "column": 1,
+                "columnSpan": 72,
+                "canSelect": true,
+                "titleClick": true,
+                "click": {
+                  "canClick": true,
+                  "canHover": true
+                },
+                "legend": {
+                  "show": true
+                }
+              }
+            ]
+          }
+        }
       }
     ]
   }
