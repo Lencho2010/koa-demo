@@ -11,7 +11,6 @@
     },
     "charts": [
       {
-        "extendJs": "永久基本农田土地利用现状",
         "layout": {
           "grid-area": "a"
         },
@@ -303,6 +302,7 @@
         }
       },
       {
+        "extendJs": "永久基本农田土地利用现状",
         "title": {
           "isChecked": false,
           "isCanClick": false
